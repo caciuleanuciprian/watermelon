@@ -6,8 +6,27 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     background-color: #FFF4E9;
+    overflow-y: hidden;
+    overflow-x: hidden;
+
+    animation: fadein ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: backwards;
+}
+
+@keyframes fadein{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
 
 /* Header section & Nav bar */
@@ -76,10 +95,6 @@ nav ul li button:hover{
 
 /* Main section */
 
-main{
-    
-}
-
 .column{
     float: left;
     width: 50%;
@@ -102,13 +117,76 @@ main{
     
 }
 
+.second .container{
+    height: 100vh;
+    width: 100vw;
+}
+
+.second .container .column h1{
+    text-align: center;
+    margin-top: 20%;
+    font-size: 5em;
+    text-decoration: none;
+    color: seagreen;
+    font-family: 'Staatliches', cursive;
+    letter-spacing: 15px;
+    width: 70%;
+}
+
+.second .container .column .card{
+    width: 70%;
+    height: 300px;
+    border-radius: 50px;
+    background: linear-gradient(145deg, #e6dcd2, #fffff9);
+    box-shadow:  30px 30px 60px #d9cfc6, 
+             -30px -30px 60px #ffffff;
+
+}
+
+.second .container .column .card p{
+    text-align: start;
+    margin-top: 5%;
+    padding-top: 7%;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 2em;
+    text-decoration: none;
+    color: seagreen;
+    font-family: 'Staatliches', cursive;
+    letter-spacing: 5px;
+}
+
+.third{
+    height: 100vh;
+    width: 100vw;
+}
+
+.third .container{
+    display: flex;
+    justify-content: center;
+}
+
+.third .container .column{
+    margin-top: -150px;
+
+}
+
+.third .container .column .row{
+    margin-top: -150px;
+    display: flex;
+    justify-content: start;
+}
+
+.fourth{
+    height: 100vh;
+    width: 100vw;
+}
+
 /* 
-    Fix main page
-    Find some stuff to write here
-    Main is empty
-    Fix text
-    Try to make the illustration smaller
+    Fix main page !!!
     Try to hide scroll bar
-    Add custom waypoints
+    Bring text closer to image
+    Sticky navbar
+
 
     */
