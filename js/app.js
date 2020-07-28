@@ -39,3 +39,11 @@ const animation5 = bodymovin.loadAnimation({
     autoplay: true,
     path: 'animations/Animation 05/watermelon-pack-animation-05.json'
 })
+
+
+// Sticky navbar
+
+window.addEventListener("scroll", function(){
+    let header = document.querySelector("header");
+    header.classList.toggle("sticky", window.scrollY > 0);
+})

@@ -39,6 +39,7 @@ nav{
     display: block;
     position: relative;
     float: right;
+    overflow: hidden;
 }
 nav ul{
     text-align: center;
@@ -53,7 +54,7 @@ nav ul li{
 
 nav ul li a{
     text-decoration: none;
-    color: seagreen;
+    color: #8ce08c;
     font-family: 'Staatliches', cursive;
     font-size: 1.2em;
 }
@@ -76,10 +77,16 @@ nav ul li button{
 
 nav ul li button:hover{
     background-color: black;
-    color: whitesmoke;
+    color: #8ce08c;
     border-color: black;
 }
 
+header.sticky{
+    top: 0%;
+    position: sticky;
+    z-index: 999;
+    background-color: #fff4e983;
+}
 
 #logo{
     width: 40px;
@@ -93,11 +100,14 @@ nav ul li button:hover{
 
 }
 
+
 /* Main section */
 
 .column{
     float: left;
     width: 50%;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 .row:after{
@@ -111,10 +121,20 @@ nav ul li button:hover{
     margin-top: 25%;
     font-size: 5em;
     text-decoration: none;
-    color: seagreen;
+    color: #8ce08c;
     font-family: 'Staatliches', cursive;
     letter-spacing: 15px;
     
+}
+
+.column h1#maintitle{
+    letter-spacing: 30px;
+    text-align: end;
+    margin-right: -150px;
+}
+
+.column #anim5{
+    margin-left: -150px;
 }
 
 .second .container{
@@ -125,9 +145,9 @@ nav ul li button:hover{
 .second .container .column h1{
     text-align: center;
     margin-top: 20%;
-    font-size: 5em;
+    font-size: 4em;
     text-decoration: none;
-    color: seagreen;
+    color: #8ce08c;
     font-family: 'Staatliches', cursive;
     letter-spacing: 15px;
     width: 70%;
@@ -146,12 +166,12 @@ nav ul li button:hover{
 .second .container .column .card p{
     text-align: start;
     margin-top: 5%;
-    padding-top: 7%;
+    padding-top: 10%;
     margin-left: 10%;
     margin-right: 10%;
-    font-size: 2em;
+    font-size: 1.75em;
     text-decoration: none;
-    color: seagreen;
+    color: rgba(46, 139, 86, 0.35);
     font-family: 'Staatliches', cursive;
     letter-spacing: 5px;
 }
@@ -162,19 +182,141 @@ nav ul li button:hover{
 }
 
 .third .container{
-    display: flex;
-    justify-content: center;
+
+    height: 100%;
+
 }
 
 .third .container .column{
-    margin-top: -150px;
+    margin-top: -100px;
+}
 
+.third .container .column h1#title{
+    font-size: 3.5em;
+    letter-spacing: 15px;
+}
+
+.third .container .column#anim3{
+    margin-top: 30px;
 }
 
 .third .container .column .row{
-    margin-top: -150px;
+    margin-top: 5%;
+}
+
+.third .container .column .row#post1{
+
+    margin-left: 10%;
+}
+
+.third .container .column .row#post1 .blogcard{
+    width: 100%;
+    height: 154px;
     display: flex;
-    justify-content: start;
+    align-items: center;
+    background-color: #3aff9338;
+}
+
+.third .container .column .row#post1 img{
+    width: 25%;
+    height: 150px;
+    padding-left: 2px;
+    position: relative;
+}
+
+.third .container .column .row#post1 p a{
+    text-decoration: none;
+    color: #8ce08c80;
+}
+
+.third .container .column .row#post1 p{
+    display: inline-block;
+    align-self: flex-start;
+    font-size: 1.3em;
+    font-family: 'Staatliches', cursive;
+    letter-spacing: 5px;
+    margin: 15px;
+}
+
+.third .container .column .row#post1 p a:hover{
+    color: seagreen;
+}
+
+.third .container .column .row#post2{
+
+    margin-left: 10%;
+}
+
+.third .container .column .row#post2 .blogcard{
+    width: 100%;
+    height: 154px;
+    display: flex;
+    align-items: center;
+    background-color: #3aff9338;
+}
+
+.third .container .column .row#post2 img{
+    width: 25%;
+    height: 150px;
+    position: relative;
+    padding-left: 2px;
+}
+
+.third .container .column .row#post2 p a{
+    text-decoration: none;
+    color: #8ce08c80;
+}
+
+.third .container .column .row#post2 p{
+    display: inline-block;
+    align-self: flex-start;
+    font-size: 1.3em;
+    font-family: 'Staatliches', cursive;
+    letter-spacing: 5px;
+    margin: 15px;
+}
+
+.third .container .column .row#post2 p a:hover{
+    color: seagreen;
+}
+
+.third .container .column .row#post3{
+
+    margin-left: 10%;
+}
+
+.third .container .column .row#post3 .blogcard{
+    width: 100%;
+    height: 154px;
+    display: flex;
+    align-items: center;
+
+    background-color: #3aff9338;
+}
+
+.third .container .column .row#post3 img{
+    width: 25%;
+    height: 150px;
+    position: relative;
+    padding-left: 2px;
+}
+
+.third .container .column .row#post3 p a{
+    text-decoration: none;
+    color: #8ce08c80;
+}
+
+.third .container .column .row#post3 p{
+    display: inline-block;
+    align-self: flex-start;
+    font-size: 1.3em;
+    font-family: 'Staatliches', cursive;
+    letter-spacing: 5px;
+    margin: 15px;
+}
+
+.third .container .column .row#post3 p a:hover{
+    color: seagreen;
 }
 
 .fourth{
@@ -183,10 +325,11 @@ nav ul li button:hover{
 }
 
 /* 
-    Fix main page !!!
-    Try to hide scroll bar
-    Bring text closer to image
-    Sticky navbar
 
+    Finish pricing menu
+    Begin contact page
+    Footer section and newsletter
+    Animate elements on page
+    Maybe a loading screen
 
     */
