@@ -17,7 +17,7 @@ body{
 
     animation: fadein ease 1s;
     animation-iteration-count: 1;
-    animation-fill-mode: backwards;
+    animation-fill-mode: forwards;
 }
 
 @keyframes fadein{
@@ -35,50 +35,75 @@ header{
     height: 75px;
 }
 
-nav{
+header nav{
     display: block;
     position: relative;
     float: right;
     overflow: hidden;
 }
-nav ul{
+header nav ul{
     text-align: center;
     position: relative;
 
 }
-nav ul li{
+header nav ul li{
     display: inline-block;
     margin: 0 50px 0 0;
     
 }
 
-nav ul li a{
+header nav ul li a{
     text-decoration: none;
     color: #8ce08c;
     font-family: 'Staatliches', cursive;
     font-size: 1.2em;
 }
 
-nav ul li a:hover{
-    color: black;
-    text-decoration: underline;
+header nav ul li a:hover{
+    color: seagreen;
+    animation: navitems 0.2s ease-in-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 
-nav ul li button{
+@keyframes navitems{
+    0%{
+        font-size: 1.2em;
+    }
+    50%{
+        font-size: 1.375em;
+    }
+    100%{
+        font-size: 1.5em;
+    }
+}
+
+header nav ul li button{
     background-color: transparent;
     font-size: 1.2em;
     font-family: 'Staatliches', cursive;
     padding: 5px 10px 5px 10px;
-    border-radius: 10px;
     border-color: seagreen;
     color:seagreen;
 
 }
 
-nav ul li button:hover{
-    background-color: black;
-    color: #8ce08c;
-    border-color: black;
+header nav ul li button:hover{
+    animation: buttonhover 0.3s ease-in-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes buttonhover{
+    0%{
+        border-color: seagreen;
+        color: seagreen;
+    }
+    100%{
+        background-color: seagreen;
+        color: #8ce08c;
+        border-color: #FFF4E9;
+    }
 }
 
 header.sticky{
@@ -102,6 +127,8 @@ header.sticky{
 
 
 /* Main section */
+
+/* First Page */
 
 .column{
     float: left;
@@ -136,6 +163,8 @@ header.sticky{
 .column #anim5{
     margin-left: -150px;
 }
+
+/* Second Page */
 
 .second .container{
     height: 100vh;
@@ -175,6 +204,8 @@ header.sticky{
     font-family: 'Staatliches', cursive;
     letter-spacing: 5px;
 }
+
+/* Third Page */
 
 .third{
     height: 100vh;
@@ -319,14 +350,106 @@ header.sticky{
     color: seagreen;
 }
 
+/* Fourth Page */
+
 .fourth{
     height: 100vh;
     width: 100vw;
 }
 
+.fourth h1{
+    text-align: center;
+    font-size: 3em;
+    text-decoration: none;
+    color: #8ce08c;
+    font-family: 'Staatliches', cursive;
+    letter-spacing: 15px;
+    padding-top: 100px;
+    margin-bottom: -100px;
+}
+
+.fourth .row{
+    display: flex;
+    justify-content: center;
+}
+
+.fourth .row .columnprice{
+    float: left;
+    text-align: center;
+    margin: 200px 100px 0 100px;
+    padding: 50px 50px;
+    border: 2px seagreen solid;
+    border-radius: 15px;
+}
+
+.fourth .row .columnprice h1{
+    margin-bottom: 10px;
+    display: inline-block;
+    padding: 25px 25px 25px 25px;
+    font-family: 'Staatliches', cursive;
+    color: seagreen;
+    letter-spacing: 10px;
+}
+
+.fourth .row .columnprice hr{
+    margin-top: -20px;
+    margin-bottom: 15px;
+}
+
+.fourth .row .columnprice ul{
+text-decoration: none;
+list-style-type: none;
+}
+
+.fourth .row .columnprice ul li{
+    padding: 10px;
+    color: #8ce08c80;
+    font-family: 'Staatliches', cursive;
+    font-size: 1.3em;
+    
+}
+
+.fourth .row .columnprice ul li.active{
+    color: seagreen;
+}
+
+.fourth .row .columnprice ul li i{
+    margin-right: 10px;
+    color: rgb(13, 209, 98);
+    text-decoration: none;
+}
+
+.fourth .row .columnprice button{
+    padding: 10px 45px 10px 45px;
+    margin: 15px;
+    color: #8ce08c;
+    background-color: seagreen;
+    font-family: 'Staatliches', cursive;
+    font-size: 24px;
+    border: none;
+}
+
+.fourth .row .columnprice button:hover{
+    background-color: #8ce08c;
+    color: seagreen;
+    animation: scale 0.2s ease-in-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes scale{
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.3);
+    }
+}
+
+
+
 /* 
 
-    Finish pricing menu
     Begin contact page
     Footer section and newsletter
     Animate elements on page
