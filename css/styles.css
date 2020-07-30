@@ -353,7 +353,7 @@ header.sticky{
 /* Fourth Page */
 
 .fourth{
-    height: 100vh;
+    height: 90vh;
     width: 100vw;
 }
 
@@ -373,11 +373,27 @@ header.sticky{
     justify-content: center;
 }
 
+.fourth .row #anim9{
+    position: absolute;
+    z-index: -1;
+    width: 600px;
+    height: 600px;
+    transform: translate(-140%, 53%);
+}
+
+.fourth .row #anim4{
+    position: absolute;
+    z-index: -1;
+    width: 700px;
+    height: 700px;
+    transform: translate(120%, 30%);
+}
+
 .fourth .row .columnprice{
     float: left;
     text-align: center;
-    margin: 200px 100px 0 100px;
-    padding: 50px 50px;
+    margin: 175px 50px 0 50px;
+    padding: 20px 50px;
     border: 2px seagreen solid;
     border-radius: 15px;
 }
@@ -446,7 +462,48 @@ list-style-type: none;
     }
 }
 
+/* Footer section */
 
+footer{
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: seagreen;
+}
+
+footer i{
+    color: #8ce08c;
+    font-size: 24px;
+    margin: 0 36px 0 36px;
+    display: inline-block;
+    
+}
+
+footer i:hover{
+    color: black;
+    animation: scaleupicon 0.3s ease;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+}
+
+footer h4{
+    margin: 0 25px 0 25px;
+    color: #8ce08c;
+    font-family: 'Staatliches', cursive;
+    font-size: 1.3em;
+    letter-spacing: 0.3em;
+}
+
+@keyframes scaleupicon{
+    0%{
+        font-size: 24px;
+    }
+    100%{
+        font-size: 36px;
+    }
+}
 
 /* 
 

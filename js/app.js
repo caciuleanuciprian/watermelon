@@ -40,6 +40,29 @@ const animation5 = bodymovin.loadAnimation({
     path: 'animations/Animation 05/watermelon-pack-animation-05.json'
 })
 
+const animation6 = bodymovin.loadAnimation({
+    container: document.getElementById('anim6'),
+    renderer: 'svg',
+    loop: true,
+    autoplay: true,
+    path: 'animations/Animation 06/watermelon-pack-animation-06.json'
+})
+const animation8 = bodymovin.loadAnimation({
+    container: document.getElementById('anim8'),
+    renderer: 'svg',
+    loop: true,
+    autoplay: true,
+    path: 'animations/Animation 08/watermelon-pack-animation-08.json'
+})
+
+const animation9 = bodymovin.loadAnimation({
+    container: document.getElementById('anim9'),
+    renderer: 'svg',
+    loop: true,
+    autoplay: true,
+    path: 'animations/Animation 09/watermelon-pack-animation-09.json'
+})
+
 
 // Sticky navbar
 
