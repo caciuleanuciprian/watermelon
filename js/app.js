@@ -70,3 +70,10 @@ window.addEventListener("scroll", function(){
     let header = document.querySelector("header");
     header.classList.toggle("sticky", window.scrollY > 0);
 })
+
+// Contact
+
+document.getElementById("contact").onclick = function(){
+    document.querySelector(".contact").classList.toggle("active");
+}
+
