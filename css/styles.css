@@ -15,7 +15,7 @@ body{
     overflow-y: hidden;
     overflow-x: hidden;
 
-    animation: fadein ease 1s;
+    animation: fadein ease 2s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
@@ -23,9 +23,11 @@ body{
 @keyframes fadein{
     0%{
         opacity: 0;
+
     }
     100%{
         opacity: 1;
+
     }
 }
 
@@ -133,51 +135,107 @@ header.sticky{
 /* Contact Page */
 
 .contact{ 
-    animation: in 1s ease;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards; 
     background-color: red;
     width: 20vw;
     height: 100vh;
     position: absolute;
-    transform: translate(400%, 0%);
+    transform: translate(500%, 0%);
     z-index: 999;
     display: block;
 }
 
 @keyframes in{
     0%{
-        transform: translate(400%, 0%);
-        display: block;
+        transform: translate(500%, 0%);
+
     }
     100%{
-        transform: translate(500%, 0%);
-        display: none;
+        transform: translate(400%, 0%);
+
     }
     
 }
 
 .contact.active{
-    animation: out 1s ease;
+    animation: in 1s ease;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
-    background-color: red;
+    background-color: #8ce08c;
     width: 20vw;
-    height: 100vh;
+    height: 90vh;
     position: absolute;
-    transform: translate(400%, 0%);
-    z-index: 999;
+    transform: translate(500%, 0%);
     display: block;
+    margin-top: 50px;
+    border: 2px seagreen solid;
+    display: flex;
+    justify-content: center;
 }
 
-@keyframes out{
-    0%{
-        transform: translate(500%, 0%);
-    }
-    100%{
-        transform: translate(400%, 0%);
-    }
+.form-inner{
+    padding: 40px;
+    width: 100vw;
+    height: 100vh;
 }
+
+.form-inner h1{
+    font-family: 'Staatliches', cursive;
+    text-align: center;
+    margin-bottom: 25px;
+    color: white;
+    letter-spacing: 5px;
+}
+
+.form-inner p{
+    text-align: center;
+    font-family: 'Staatliches', cursive;
+    font-size: 0.75em;
+    color: white;
+    letter-spacing: 2px;
+    margin-top: 50px;
+}
+
+.form-inner input, .form-inner textarea{
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 20px;
+    background: seagreen;
+    color: white;
+}
+
+::placeholder{
+    color: white;
+    font-family: 'Staatliches', cursive;
+    letter-spacing: 2px;
+}
+
+.form-inner textarea{
+    resize: none;
+    height: 50vh;
+}
+
+.form-inner button{
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 20px;
+    border: none;
+    border-bottom: 4px solid #3e4f24;
+    background: seagreen; 
+    font-size: 1.5em;
+    letter-spacing: 5px;
+    font-weight: 400;
+    color: #fff;
+    font-family: 'Staatliches', cursive;
+}
+
+.form-inner button:hover{
+        filter: brightness(1.5);
+        transform: scale(1.05);
+    } 
 
 /* First Page */
 
@@ -482,8 +540,6 @@ footer h4{
 
 /* 
 
-    Polish contact page
-    Fix animation contact page
     Animate elements on page
     Maybe a loading screen
     Responsive everything

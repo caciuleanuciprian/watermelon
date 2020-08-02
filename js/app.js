@@ -72,8 +72,6 @@ window.addEventListener("scroll", function(){
 })
 
 // Contact
-
 document.getElementById("contact").onclick = function(){
     document.querySelector(".contact").classList.toggle("active");
 }
-
