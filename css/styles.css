@@ -170,12 +170,14 @@ header.sticky{
     border: 2px seagreen solid;
     display: flex;
     justify-content: center;
+    z-index: 999;
 }
 
 .form-inner{
     padding: 40px;
     width: 100vw;
     height: 100vh;
+
 }
 
 .form-inner h1{
@@ -244,6 +246,7 @@ header.sticky{
     width: 50%;
     padding-left: 5%;
     padding-right: 5%;
+    z-index: 9;
 }
 
 .row:after{
@@ -271,6 +274,7 @@ header.sticky{
 
 .column #anim5{
     margin-left: -150px;
+    z-index: 1;
 }
 
 /* Second Page */
@@ -540,7 +544,6 @@ footer h4{
 
 /* 
 
-    Animate elements on page
     Maybe a loading screen
     Responsive everything
 
