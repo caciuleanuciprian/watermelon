@@ -1,0 +1,123 @@
+@media (max-width: 1366px){
+    html{
+        max-width: 1366px;
+    }
+
+    .third .container .column{
+        margin-top: -50px;
+    }
+
+    .third .container .column h1#title{
+
+        font-size: 2.5em;
+    }
+
+    .third .container .column .row{
+        margin: 0px;
+        margin-top: 30px;
+    }
+
+    .third .container .column .row p{
+        font-size: 1.3em;
+        letter-spacing: 3px;
+    }
+
+
+    .fourth .row #anim4{
+        display: none;
+    }
+
+    .fourth .row #anim9{
+        display: none;
+    }
+
+    .fourth h1{
+        font-size: 3em;
+        padding-top: 65px;
+        margin-bottom: 0px;
+        letter-spacing: 5px;
+        text-align: center;
+    }
+
+    .fourth .row .columnprice{
+        margin: 25px 20px 500px 20px;
+    }
+
+    .fourth .row .columnprice h1{
+        font-size: 1.5em;
+        padding: 25px 0 25px 0;
+    }
+
+    .fourth .row .columnprice ul li{
+        font-size: 1em;
+    }
+
+    .fourth .row .columnprice button{
+        padding: 10px 25px 10px 25px;
+        margin: 5px;
+        font-size: 18px;
+    }
+    
+    .column h1#maintitle{
+        font-size: 4em;
+        letter-spacing: 10px;
+        margin-right: -75px;
+    }
+    
+    .second .container .column h1{
+        margin-top: 30%;
+        font-size: 3em;
+        letter-spacing: 5px;
+    }
+
+    .second .container .column .card p{
+        font-size: 1.5em;
+    }
+
+    .second .container .column .card{
+        height: 280px;
+    }
+
+    .second .container .column #anim2{
+        margin-top: 10%;
+        width: 650px;
+        height: 650px;
+    }
+
+    .third .container .column#anim3{
+        margin-top: 125px;
+    }
+
+    .contact.active{
+        height: 80vh;
+    }
+
+    .form-inner h1{
+        margin-top: -20px;
+    }
+
+    .form-inner p{
+        font-size: 0.675em;
+        margin-top: 7px;
+    }
+
+    .form-inner input, .form-inner textarea{
+        margin-bottom: 10px;
+    }
+
+    .form-inner textarea{
+        height: 40vh;
+    }
+
+    .form-inner button{
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+    }
+}
+
+/*
+@media (min-width: 640px){
+
+}
+*/
