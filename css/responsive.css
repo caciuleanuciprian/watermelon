@@ -116,8 +116,503 @@
     }
 }
 
-/*
-@media (min-width: 640px){
+@media (max-width: 1024px){
+    .column h1#maintitle{
+        font-size: 3em;
+        margin: 0;
+        margin-top: 200px;
+    }
+
+    .second .container .column h1{
+        font-size: 2.5em;
+    }
+
+    .second .container .column .card p{
+        font-size: 1.4em;
+    }
+
+    .third .container .column h1#title{
+        font-size: 2em;
+        letter-spacing: 5px;
+        margin-top: 150px;
+    }
+
+    .third .container .column .row p{
+        font-size: 1em;
+    }
+
+    .fourth h1{
+        font-size: 2em;
+        padding-top: 100px;
+        margin-bottom: 0px;
+    }
+
+    .contact.active{
+        height: 80vh;
+    }
+
+    .form-inner h1{
+        font-size: 1.2em;
+        letter-spacing: 2px;
+        margin-bottom: 10px;
+    }
+
+    .form-inner{
+        padding: 30px 20px 20px 20px;
+    }
+
+    .form-inner input, .form-inner textarea{
+        padding: 10px;
+    }
+
+    .form-inner textarea{
+        height: 50vh;
+    }
+
+    .form-inner button{
+        padding: 5px;
+    }
+}
+
+@media (max-width: 768px){
+
+    .contact.active{
+        height: 55vh;
+    }
+
+    .form-inner{
+        padding: 20px 10px 20px 10px;
+    }
+
+    .form-inner h1{
+        margin-top: 0px;
+    }
+
+    .form-inner textarea{
+        padding: 10px;
+        height: 30vh;
+    }
+
+    .column#first{
+        width: 100vw;
+        padding: 0;
+    }
+
+    .column h1#maintitle{
+        font-size: 3em;
+        margin: 0;
+        margin-top: 100px;
+        text-align: center;
+        margin: 50px 50px 0 50px;
+    }
+
+    .column #anim5{
+        width: 700px;
+        height: 700px;
+        margin: 0 auto;
+        margin-top: -100px;
+    }
+
+    .second .container .row .column#second{
+        width: 100vw;
+    }
+
+    .second .container .row .column #anim2{
+        width: 500px;
+        height: 500px;
+        position: absolute;
+        transform: translate(30%, 70%);
+    }
+
+    .second .container .row .column h1{
+        font-size: 2em;
+        letter-spacing: 5px;
+        margin: 0 auto;
+        text-align: center;
+        margin-top: 100px;
+    }
+
+    .second .container .column .card{
+        margin: 0 auto;
+    }
+
+    .second .container .column .card p{
+        font-size: 1.75em;
+    }
+
+    .third .container .column{
+        width: 100vw;
+    }
+
+    .third .container .column h1#title{
+        margin-top: 150px;
+    }
+
+    .third .container .column .row .blogcard{
+        height: 100px;
+    }
+
+    .third .container .column .row img{
+        height: 96px;
+        width: 20%;
+    }
+
+    .third .container .column .row p{
+        font-size: 1.2em;
+    }
+
+    .third .container .column#anim3{
+        width: 500px;
+        height: 500px;
+        margin: 0 auto;
+        transform: translate(20%, -10%);
+    }
+
+    .fourth h1{
+        padding-top: 130px;
+        padding-bottom: 25px;
+    }
+
+    .fourth .row .columnprice{
+        padding: 20px 20px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    footer i{
+        font-size: 18px;
+    }
+
+    footer h4{
+        font-size: 1em;
+    }
+
+    header nav ul li a:hover{
+        animation: none;
+    }
+}
+
+@media (max-width: 480px){
+    @media (max-height: 320px){
+    
+    #logo img{
+        margin-top: 20px;
+        width: 40px;
+        height: 30px;
+    }
+
+
+    header nav ul li{
+        margin: 0 20px 0 0;
+    }
+
+    header nav ul li a{
+        font-size: 0.8em;
+    }
+    header nav ul li a:hover{
+        animation: none;
+    }
+
+    .third .container .column#anim3{
+        display: none;
+    }
+
+    .second .container .row .column #anim2{
+        width: 200px;
+        height: 200px;
+        margin-top: -40px;
+        transform: translate(120%, 20%);
+        z-index: -10;
+    }
+
+    header nav ul li button{
+        font-size: 0.8em;
+        padding: 2px 5px 2px 5px;
+    }
+
+    .column #anim5{
+        width: 200px;
+        height: 200px;
+    }
+
+    .column h1#maintitle{
+        font-size: 2em;
+    }
+
+    .column #anim5{
+        width: 300px;
+        height: 300px;
+        transform: translate(0%, 10%);
+        z-index: -1;
+    }
+
+    .second .container .row .column{
+        margin-top: 10px;
+    }
+
+    .second .container .row .column h1{
+        margin: auto;
+        font-size: 1.5em;
+    }
+
+    .second .container .column .card{
+        visibility: hidden;
+    }
+
+    .second .container .column .card p{
+        visibility: visible;
+        font-size: 0.8em;
+        margin-top: -20px;
+    }
+
+    .third .container .column h1#title{
+        margin-top: 70px;
+        font-size: 1.5em;
+    }
+
+    .third .container .column .row .blogcard{
+        height: 50px;
+        margin: 0 auto;
+        margin-top: -15px;
+    }
+
+    .third .container .column .row img{
+        height: 46px;
+        width: 15%;
+    }
+
+    .third .container .column .row p{
+        font-size: 0.5em;
+        margin: 0px;
+        margin: auto;
+        margin-left: 10px;
+    }
+
+    .fourth .row{
+        margin-top: 50px;
+    }
+
+    .fourth h1{
+        font-size: 1em;
+        padding: 0;
+        margin: 0;
+        padding-top: 50px;
+        margin-bottom: -30px;
+        
+    }
+
+    .fourth .row .columnprice{
+        margin: 0px 10px;
+        padding: 0px 10px;
+    }
+
+    .fourth .row .columnprice h1{
+        letter-spacing: 0px;
+        font-size: 1em;
+        padding: 5px 5px 0px 5px;
+    }
+
+    .fourth .row .columnprice hr{
+        margin: 0px;
+        margin-top: -10px;
+        margin-bottom: 5px;
+    }
+
+    .fourth .row .columnprice ul li{
+        padding: 0px 0px 0px 0px;
+        font-size: 0.7em;
+    }
+
+    .fourth .row .columnprice button{
+        padding: 2px 10px;
+        font-size: 12px;
+    }
+
+    footer i{
+        font-size: 10px;
+
+    }
+
+    footer h4{
+        font-size: 0.5em;
+        letter-spacing: 0px;
+    }
+
+    .contact.active{
+        height: 75vh;
+    }
+
+    .form-inner{
+        padding: 10px;
+    }
+
+    .form-inner h1{
+        letter-spacing: 0px;
+        font-size: 1em;
+    }
+
+    .form-inner p{
+        font-size: 0.5em;
+        letter-spacing: 0px;
+    }
+
+    .form-inner textarea{
+        height: 25vh;
+        margin-bottom: 0px;
+        border-radius: 15%;
+    }
+
+    .form-inner button{
+        font-size: 0.6em;
+        letter-spacing: 0px;
+        padding: 0px;
+        width: 50%;
+        margin-left: 25%;
+    }
+
+    .form-inner input, .form-inner textarea{
+        padding: 5px;
+        font-size: 0.5em;
+    }
+
 
 }
-*/
+
+    @media (min-height: 321px){
+
+        #logo img{
+            margin-top: 20px;
+            width: 40px;
+            height: 30px;
+        }
+    
+        header nav ul li{
+            margin: 0 20px 0 0;
+        }
+    
+        header nav ul li a{
+            font-size: 0.8em;
+        }
+        header nav ul li a:hover{
+            animation: none;
+        }
+        header nav ul li button{
+            font-size: 0.8em;
+            padding: 2px 5px 2px 5px;
+        }
+
+        .row .column h1#maintitle{
+            font-size: 2em; 
+        }
+
+        .row .column #anim5{
+            transform: translate(0%, 10%);
+            width: 400px;
+            height: 400px;
+        }
+
+        .second .container .row .column{
+            margin-top: 10px;
+        }
+    
+        .second .container .row .column h1{
+            margin: auto;
+            font-size: 2em; 
+            margin-bottom: 25px;
+            margin-top: 0px;
+        }
+    
+        .second .container .column .card{
+            visibility: hidden;
+        }
+    
+        .second .container .column .card p{
+            visibility: visible;
+            font-size: 0.8em;
+            margin-top: -40px;
+            margin-left: 15px;
+        }
+
+        .second .container .row .column #anim2{
+            width: 400px;
+            height: 400px;
+            margin-top: -160px;
+            transform: translate(0%, 75%);
+            z-index: -10;
+        }
+
+        .third .container .column h1#title{
+            margin-top: 200px;
+            font-size: 2em; 
+        }
+    
+        .third .container .column .row .blogcard{
+            height: 80px;
+            margin: 0 auto;
+            margin-top: -15px;
+        }
+    
+        .third .container .column .row img{
+            height: 76px;
+            width: 25%;
+        }
+    
+        .third .container .column .row p{
+            font-size: 0.7em;
+            margin: 0px;
+            margin: auto;
+            margin-left: 10px;
+        }
+
+        .third .container .column#anim3{
+            width: 300px;
+            height: 300px;
+            transform: translate(10%, -22%);
+            z-index: -5;
+        }
+
+        .fourth h1{
+            margin-top: 0px;
+            letter-spacing: 0px;    
+            font-size: 2em;    
+    }
+
+        .fourth .row .columnprice{
+            margin: 10px;
+            padding: 0px 10px 0px 10px;
+        }
+
+        .fourth .row .columnprice h1{
+            padding: 10px 5px 10px 5px;
+            letter-spacing: 0px;
+            font-size: 1.5em;
+        }
+
+        .fourth .row .columnprice hr{
+            margin-top: -5px;
+            margin-bottom: 15px;
+        }
+
+        .fourth .row .columnprice ul li{
+            font-size: 1em;
+            padding: 5px;
+        }
+
+        .fourth .row .columnprice button{
+            padding: 3px 10px;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        
+        footer i{
+            font-size: 11px;
+        }
+
+        footer h4{
+            font-size: 0.6em;
+            letter-spacing: 0px;
+        }
+    
+
+    }
+}
