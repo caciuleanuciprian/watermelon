@@ -1,6 +1,25 @@
+@media (max-width: 1920px){
+    html{
+        scroll-behavior: smooth;
+    }
+
+    body{
+        overflow-y: hidden;
+    }
+}
+
 @media (max-width: 1366px){
     html{
         max-width: 1366px;
+        
+    }
+
+    html{
+        scroll-behavior: smooth;
+    }
+
+    body{
+        overflow-y: hidden;
     }
 
     .third .container .column{
@@ -117,6 +136,13 @@
 }
 
 @media (max-width: 1024px){
+    html{
+        scroll-behavior: smooth;
+    }
+
+    body{
+        overflow-y: hidden;
+    }
     .column h1#maintitle{
         font-size: 3em;
         margin: 0;
@@ -175,6 +201,13 @@
 }
 
 @media (max-width: 768px){
+    html{
+        scroll-behavior: smooth;
+    }
+
+    body{
+        overflow-y: hidden;
+    }
 
     .contact.active{
         height: 55vh;
