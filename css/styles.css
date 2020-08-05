@@ -1206,12 +1206,13 @@ footer h4{
         }
         
         footer i{
-            font-size: 11px;
+            font-size: 18px;
         }
 
         footer h4{
             font-size: 0.6em;
             letter-spacing: 0px;
+            display: none;
         }
 
         .form-inner h1{
